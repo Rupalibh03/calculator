@@ -2,89 +2,87 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Calculator</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<head<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Calculator</title>
+<link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="calculator">
-            <div class="calculator-header">
-                <h3>Calculator</h3>
-                <button id="info-btn"><i class="fa fa-info-circle"></i></button>
-            </div>
-            <div class="display">
-                <div class="previous-operand" id="previous-operand"></div>
-                <div class="current-operand" id="current-operand">0</div>
-            </div>
-            <div class="buttons">
-                <button class="special-btn" data-action="clear">AC</button>
-                <button class="special-btn" data-action="delete">DEL</button>
-                <button class="special-btn" data-action="%">%</button>
-                <button class="operation-btn" data-operation="÷">÷</button>
+ <div class="container">
+ <div class="calculator">
+ <div class="calculator-header">
+ <h3>Calculator</h3>
+ <button id="info-btn"><i class="fa fa-info-circle"></i></button>
+</div>
+<div class="display">
+<div class="previous-operand" id="previous-operand"></div>
+ <div class="current-operand" id="current-operand">0</div>
+ </div>
+<div class="buttons">
+ <button class="special-btn" data-action="clear">AC</button>
+<button class="special-btn" data-action="delete">DEL</button>
+<button class="special-btn" data-action="%">%</button>
+<button class="operation-btn" data-operation="÷">÷</button>
                 
-                <button class="number-btn" data-number="7">7</button>
-                <button class="number-btn" data-number="8">8</button>
-                <button class="number-btn" data-number="9">9</button>
-                <button class="operation-btn" data-operation="×">×</button>
+  <button class="number-btn" data-number="7">7</button>
+ <button class="number-btn" data-number="8">8</button>
+ <button class="number-btn" data-number="9">9</button>
+<button class="operation-btn" data-operation="×">×</button>
                 
-                <button class="number-btn" data-number="4">4</button>
-                <button class="number-btn" data-number="5">5</button>
-                <button class="number-btn" data-number="6">6</button>
-                <button class="operation-btn" data-operation="-">-</button>
+ <button class="number-btn" data-number="4">4</button>
+ <button class="number-btn" data-number="5">5</button>
+ <button class="number-btn" data-number="6">6</button>
+ <button class="operation-btn" data-operation="-">-</button>
                 
-                <button class="number-btn" data-number="1">1</button>
-                <button class="number-btn" data-number="2">2</button>
-                <button class="number-btn" data-number="3">3</button>
-                <button class="operation-btn" data-operation="+">+</button>
+ <button class="number-btn" data-number="1">1</button>
+ <button class="number-btn" data-number="2">2</button>
+ <button class="number-btn" data-number="3">3</button>
+<button class="operation-btn" data-operation="+">+</button>
                 
-                <button class="number-btn" data-number="0">0</button>
-                <button class="number-btn" data-number=".">.</button>
-                <button class="equals-btn" data-equals="=">=</button>
-            </div>
-        </div>
-    </div>
+ <button class="number-btn" data-number="0">0</button>
+ <button class="number-btn" data-number=".">.</button>
+ <button class="equals-btn" data-equals="=">=</button>
+ </div>
+ </div>
+</div>
 
-    <div class="modal" id="info-modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="about-section">
-                <h2>About this Calculator</h2>
-                <p>This is a modern, responsive calculator built with HTML, CSS, and JavaScript. It supports basic arithmetic operations, percentage calculations, and has a clean, intuitive interface.</p>
-                <p>Features include:</p>
-                <ul>
-                    <li>Basic operations (addition, subtraction, multiplication, division)</li>
-                    <li>Percentage calculations</li>
-                    <li>Decimal point input</li>
-                    <li>Clear and delete functionality</li>
-                    <li>Responsive design for all devices</li>
-                </ul>
-            </div>
-            <div class="author-section">
-                <h2>About the Author</h2>
-                <div class="author-info">
-                    <div class="author-avatar">
-                        <i class="fa fa-user-circle"></i>
-                    </div>
-                    <div class="author-details">
-                        <h3>Rupali Bhargav </h3>
-                        <img src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FmSCOHaVmMiYEmW7GK0ig%2F1701760099265.jpg?alt=media&token=a31cb92d-0030-4846-8409-44d34feb479b" alt="A nice view" width="200" height="100">
-                        <p>Frontend Developer</p>
-                        <div class="social-links">
-                            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        </div>
-                        <p>Passionate about creating intuitive, beautiful web applications that solve real problems.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+ <div class="modal" id="info-modal">
+<div class="modal-content">
+ <span class="close">&times;</span>
+  <div class="about-section">
+ <h2>About this Calculator</h2>
+ <p>This is a modern, responsive calculator built with HTML, CSS, and JavaScript. It supports basic arithmetic operations, percentage calculations, and has a clean, intuitive interface.</p>
+ <p>Features include:</p>
+ <ul>
+ <li>Basic operations (addition, subtraction, multiplication, division)</li>
+ <li>Percentage calculations</li>
+ <li>Decimal point input</li>
+ <li>Clear and delete functionality</li>
+ <li>Responsive design for all devices</li>
+ </ul>
+</div>
+ <div class="author-section">  <h2>About the Author</h2>
+ <div class="author-info">
+ <div class="author-avatar">
+ <i class="fa fa-user-circle"></i>
+ </div>
+ <div class="author-details">
+ <h3>Rupali Bhargav </h3>
+ <img src="https://firebasestorage.googleapis.com/v0/b/codedex-io.appspot.com/o/buildAssets%2FmSCOHaVmMiYEmW7GK0ig%2F1701760099265.jpg?alt=media&token=a31cb92d-0030-4846-8409-44d34feb479b" alt="A nice view" width="200" height="100">
+ <p>Frontend Developer</p>
+ <div class="social-links">
+ <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+ <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+ <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+ </div>
+ <p>Passionate about creating intuitive, beautiful web applications that solve real problems.</p>
+ </div>
+ </div>
+  </div>
+ </div>
+ </div>
 
-    <script src="script.js"></script>
+ <script src="script.js"></script>
 </body>
 </html>
